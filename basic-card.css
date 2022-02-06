@@ -6,35 +6,52 @@ html, body {
 .photo{
     background-image: url("trent-reznor.jpeg");
     background-repeat: no-repeat;
-    display: flex;
+    background-size: 100%;
+    display: inline-flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    align-content: stretch;
     height: 100%;
 }
 
 .top-left img{
     width: 200px;
     height: 200px;
-    padding-top: 20px;
-    padding-left: 20px;
+    margin-top: 20px;
+    margin-left: 20px;
 }
 
 .top-left{
+    display: block;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+    align-self: auto;
     order: 0;
-    flex: 0 1 auto;
-    align-self: flex-start;
 }
 
 .bottom-centered {
-    order: 0;
-    flex: 0 1 auto;
+    display: block;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
     align-self: flex-end;
+    order: 0;
     background-color: white;
     padding: 20px;
-    margin-bottom: 50px;
     opacity: .5;
+    margin: 20px;
 }
 
 .news-title{
     font-weight: 900;
-    font-size: 3em;
-    color: rgba(0, 0, 0, 0.8);
+    font-size: 4em;
+    color: rgba(0, 0, 0, 1);
+}
+
+.news-resume{
+    font-size: 2.2em;
+    color: rgba(0, 0, 0, .8);
 }
